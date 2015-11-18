@@ -21,5 +21,6 @@ docker run \
     -it \
     --link mongo-nest-dev:mongo-nest-dev \
     -v $DIR/../../../nest:/home/r/nest \
-    entomo-project/nest-dev \
+    -v $DIR/../../../phero:/home/r/phero \
+    entomo-project/entomo-dev \
     bash -c "su - r"

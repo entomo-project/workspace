@@ -46,6 +46,11 @@ RUN \
   apt-get install -y \
       git
 
+RUN \
+  apt-get update && \
+  apt-get install -y \
+      php5-sqlite
+
 COPY conf/etc/php5/cli/php.ini /etc/php5/cli/php.ini
 
 ENV HOME /root
