@@ -42,6 +42,10 @@ RUN \
     curl -sS https://getcomposer.org/installer | php && \
     mv /home/r/bin/composer.phar /home/r/bin/composer
 
+RUN \
+  apt-get install -y \
+      git
+
 COPY conf/etc/php5/cli/php.ini /etc/php5/cli/php.ini
 
 ENV HOME /root

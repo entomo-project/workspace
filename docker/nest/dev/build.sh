@@ -2,4 +2,4 @@
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-docker build $@ -t roach-project/nest-dev $DIR
+docker build $@ -t entomo-project/nest-dev $DIR
